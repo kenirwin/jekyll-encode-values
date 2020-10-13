@@ -1,10 +1,12 @@
 $(document).ready(() => {
+  new ClipboardJS('#copy-output');
+
   $('#encrypt-submit').click(() => {
     let raw_in = $('#encrypt-input').val();
     // alert(raw_in);
     // let salt = $('#salt').val();
     let output = JSON.stringify(encryptValues(JSON.parse(raw_in)), null, 2);
-    $('#encrypted-output').html('<pre>' + output + '</pre>');
+    $('#encrypted-output').html(output);
   });
 
   $('#decrypt-submit').click(() => {
@@ -17,7 +19,7 @@ $(document).ready(() => {
       null,
       2
     );
-    $('#encrypted-output').html('<pre>' + output + '</pre>');
+    $('#encrypted-output').html(output);
   });
 });
 
