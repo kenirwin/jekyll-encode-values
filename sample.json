@@ -1,11 +1,11 @@
 {
     "name": {
-        "first": "ken",
-        "last": "irwin"
+        "first": "Ken",
+        "last": "Irwin"
     },
-    "title": "librarian",
+    "title": "Librarian",
     "address": {
-        "number": "313",
-        "street": "Old Line Ave"
+        "number": "1234",
+        "street": "Lollypop Lane"
     }
 }
